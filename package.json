@@ -1,0 +1,19 @@
+{
+  "name": "bone-proxy",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "commander": "~2.3.0",
+    "iconv-lite": "~0.2.11",
+    "jschardet": "~1.1.0",
+    "deferred": "~0.6.6",
+    "memorystream": "~0.2.0",
+    "mime": "~1.2.11"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
