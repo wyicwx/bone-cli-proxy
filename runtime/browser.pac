@@ -3,7 +3,7 @@ var findProxyFromPac = (function () {
 此脚本为公司内部网络访问规则匹配脚本，包括直连访问、通过代理访问
 脚本维护人：Lemonlv（吕木森）
 更新：2014/10/24
-TJ-SQUIDPAC-13
+TJ-SQUIDPAC-14
 */
 
 function FindProxyForURL(url, host) {
@@ -534,20 +534,20 @@ function checkip(host) {
 })();
 
 function filter(url, host) {
-    if (
-        //!/\.(swf|jpg|jpeg|gif|bmp|png|cur)(\?|$)/i.test(url) && //no pics or flash
-        //!/^127\.0\.0\.1/i.test(host) && //no local
-        (
-          /^http:\/\/mat1\.gtimg\.com\/finance\/js\/st\//i.test(url) ||
-          /^http:\/\/stockapp.finance.qq.com\//i.test(url)
-        )
-        ) {
-      return true;
-    }
+    // if (
+    //     //!/\.(swf|jpg|jpeg|gif|bmp|png|cur)(\?|$)/i.test(url) && //no pics or flash
+    //     //!/^127\.0\.0\.1/i.test(host) && //no local
+    //     (
+    //       /^http:\/\/mat1\.gtimg\.com\/finance\/js\/st\//i.test(url) ||
+    //       /^http:\/\/stockapp.finance.qq.com\//i.test(url)
+    //     )
+    //     ) {
+    //   return true;
+    // }
   }
 
 function _FindProxyForURL(url, host) {
-  var rules = {"PROXY web-proxyhk.oa.com:8080":["*.google.com*","cn.wsj.com"],"PROXY web-proxy.oa.com:8080":["*wikipedia.org*","*.webdev.com*"],"DIRECT":["localhost","127.0.0.1","127.0.0.1:*","10.211.55.*"]}, i, j, len, rule, matched;
+  var rules = {}, i, j, len, rule, matched;
 
 
   for (i in rules) {

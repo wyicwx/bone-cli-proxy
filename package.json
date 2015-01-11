@@ -4,7 +4,6 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "commander": "~2.3.0",
     "iconv-lite": "~0.2.11",
     "jschardet": "~1.1.0",
     "deferred": "~0.6.6",

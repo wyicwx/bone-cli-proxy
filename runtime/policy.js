@@ -3,7 +3,7 @@ var findProxyFromPac = (function () {
 此脚本为公司内部网络访问规则匹配脚本，包括直连访问、通过代理访问
 脚本维护人：Lemonlv（吕木森）
 更新：2014/10/24
-TJ-SQUIDPAC-13
+TJ-SQUIDPAC-14
 */
 
 function FindProxyForURL(url, host) {
