@@ -10,18 +10,19 @@ module.exports = {
     // return /\.qpic\.cn/i.test(url);
   },
   replaceRules : [],
-  filter : function (url, host) {
-    if (
-        //!/\.(swf|jpg|jpeg|gif|bmp|png|cur)(\?|$)/i.test(url) && //no pics or flash
-        //!/^127\.0\.0\.1/i.test(host) && //no local
-        (
-          /^http:\/\/mat1\.gtimg\.com\/finance\/js\/st\//i.test(url) ||
-          /^http:\/\/stockapp.finance.qq.com\//i.test(url)
-        )
-        ) {
-      return true;
-    }
-  },
+  pacFilter : 'auto',
+  // function (url, host) {
+  //   if (
+  //       //!/\.(swf|jpg|jpeg|gif|bmp|png|cur)(\?|$)/i.test(url) && //no pics or flash
+  //       //!/^127\.0\.0\.1/i.test(host) && //no local
+  //       (
+  //         /^http:\/\/mat1\.gtimg\.com\/finance\/js\/st\//i.test(url) ||
+  //         /^http:\/\/stockapp.finance.qq.com\//i.test(url)
+  //       )
+  //       ) {
+  //     return true;
+  //   }
+  // },
 
   proxyRules : {
     // 'PROXY web-proxyhk.oa.com:8080' : [
@@ -46,7 +47,7 @@ module.exports = {
   ],
 
   scriptBase : __dirname,
-  pac : 'http://txp-01.tencent.com/proxy.pac',
+  pac : '',
   pacEncoding : 'gbk',
 
   enableLogs : true,
