@@ -11,16 +11,16 @@ module.exports = {
   },
   replaceRules : [],
   filter : function (url, host) {
-    // if (
-    //     //!/\.(swf|jpg|jpeg|gif|bmp|png|cur)(\?|$)/i.test(url) && //no pics or flash
-    //     //!/^127\.0\.0\.1/i.test(host) && //no local
-    //     (
-    //       /^http:\/\/mat1\.gtimg\.com\/finance\/js\/st\//i.test(url) ||
-    //       /^http:\/\/stockapp.finance.qq.com\//i.test(url)
-    //     )
-    //     ) {
-    //   return true;
-    // }
+    if (
+        //!/\.(swf|jpg|jpeg|gif|bmp|png|cur)(\?|$)/i.test(url) && //no pics or flash
+        //!/^127\.0\.0\.1/i.test(host) && //no local
+        (
+          /^http:\/\/mat1\.gtimg\.com\/finance\/js\/st\//i.test(url) ||
+          /^http:\/\/stockapp.finance.qq.com\//i.test(url)
+        )
+        ) {
+      return true;
+    }
   },
 
   proxyRules : {
