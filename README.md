@@ -20,7 +20,10 @@ bone.cli(proxy());
 
 ### 参数
 
+to be continue.
 
 ### 其他
 
-处理器开发以及使用请参考[处理器](https://github.com/wyicwx/bone/blob/master/docs/plugin.md)
+命令行工具开发以及使用请参考[处理器](https://github.com/wyicwx/bone-cli)
+
+[come frome](https://github.com/stauren/macFiddler)
