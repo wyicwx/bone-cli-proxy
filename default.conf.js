@@ -42,7 +42,7 @@ module.exports = {
   },
 
   allowIps : [
-    '127.0.0.1'
+    '*'
   ],
 
   scriptBase : __dirname,

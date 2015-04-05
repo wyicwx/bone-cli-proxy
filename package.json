@@ -1,5 +1,5 @@
 {
-  "name": "bone-proxy",
+  "name": "bone-cli-proxy",
   "version": "0.0.4",
   "description": "",
   "main": "index.js",
