@@ -3,13 +3,19 @@
 var module;
 
 module.exports = {
+  // global
+  port : 8080,
+  allowIps : [
+    '*'
+  ],
   enableReplace : true,
+  replaceRules : [],
+  
   //delay : 1000,
   delayFilter : function (url) {
     // return true;
     // return /\.qpic\.cn/i.test(url);
   },
-  replaceRules : [],
   pacFilter : 'auto',
   // function (url, host) {
   //   if (
@@ -41,23 +47,17 @@ module.exports = {
     // ]
   },
 
-  allowIps : [
-    '*'
-  ],
 
   scriptBase : __dirname,
-  pac : '',
+  // pac module
+  pac : false,
   pacEncoding : 'gbk',
-
-  enableLogs : true,
-  logFile : './logs/visit.log',
+  // logs module
+  enableLog : false,
+  visitLog : '~/bone-cli-proxy/visit.log',
   enableResponseLog : false,
-  responseLogFilePrefix : './logs/response_',
-
+  responseLog: '~/bone-cli-proxy/response.log',
+  // host
   hostsFile : './hosts.conf',
-
   enableProxyRequest : true,
-
-  port : 8080,
-  maxSockets : 10
 };
