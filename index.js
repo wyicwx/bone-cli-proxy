@@ -14,6 +14,7 @@ module.exports = function (conf) {
       .version(pkg.version)
       .action(function() {
         macFiddler.init(conf);
+        bone.helper.autoRefresh();
       });
   }
 };
