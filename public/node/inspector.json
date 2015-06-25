@@ -1,0 +1,18 @@
+[
+    { "name": "node", "type": "autostart" },
+    { "name": "platform", "type": "autostart" },
+    { "name": "main", "type": "autostart" },
+    { "name": "components", "type": "autostart" },
+    { "name": "ui", "type": "autostart" },
+    { "name": "sdk", "type": "autostart" },
+    { "name": "host", "type": "autostart" },
+    { "name": "common", "type": "autostart" },
+    { "name": "toolbox", "type": "autostart" },
+    { "name": "screencast", "type": "autostart" },
+    { "name": "workspace", "type": "autostart" },
+    { "name": "bindings", "type": "autostart" },
+    { "name": "extensions", "type": "autostart" },
+    { "name": "source_frame" },
+    { "name": "promises" },
+    { "name": "network" }
+]
