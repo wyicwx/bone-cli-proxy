@@ -1,7 +1,7 @@
 /*jslint node: true*/
 
 module.exports = function (conf) {
-  return function(command, bone) {  
+  return function(command, bone, getFs) {
     'use strict';
     var pkg = require('./package.json');
 
@@ -9,10 +9,12 @@ module.exports = function (conf) {
       macFiddler = require('./lib/macFiddler.js');
 
     macFiddler.bone = bone;
+    
 
     command('proxy')
       .version(pkg.version)
       .action(function() {
+        macFiddler.fs = (getFs && getFs()) || bone.fs;
         macFiddler.init(conf);
         bone.helper.autoRefresh();
       });
