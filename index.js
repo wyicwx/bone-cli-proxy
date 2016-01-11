@@ -16,7 +16,7 @@ module.exports = function (conf) {
       .action(function() {
         macFiddler.fs = fs || bone.fs;
         macFiddler.init(conf);
-        bone.helper.autoRefresh();
+        bone.watch();
       });
   }
 };
