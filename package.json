@@ -1,6 +1,6 @@
 {
   "name": "bone-cli-proxy",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "description": "",
   "main": "index.js",
   "dependencies": {
